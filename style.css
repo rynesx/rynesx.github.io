@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0056b3;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+form {
+    margin-bottom: 20px;
+}
+input[type="text"], input[type="number"] {
+    padding: 10px;
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #2c73bf;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    right: 20px; /* Posisi modal di pojok kanan atas */
+    top: 20px; /* Posisi modal di pojok kanan atas */
+    width: 300px; /* Lebar modal */
+    max-width: 80%; /* Lebar maksimum modal */
+    background-color: #fefefe;
+    border: 1px solid #888;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.modal-content {
+    padding: 20px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.page-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.page-info {
+    font-size: 16px;
+    color: #666;
+}
+
+.page-buttons button {
+    padding: 8px 16px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.page-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.page-buttons button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+/* Gaya untuk tombol edit */
+.action-button {
+    padding: 8px 16px;
+    background-color: #007bff; /* Warna latar belakang */
+    color: white; /* Warna teks */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.action-button:hover {
+    background-color: #0056b3; /* Warna latar belakang saat dihover */
+}
+
+/* Gaya untuk tombol hapus */
+.delete-button {
+    padding: 8px 16px;
+    background-color: #dc3545; /* Warna latar belakang */
+    color: white; /* Warna teks */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #c82333; /* Warna latar belakang saat dihover */
+}
+.edit-button {
+    margin-right: 10px; /* Tambahkan margin kanan untuk memberikan jarak antara tombol */
+}
+
+#clock {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+

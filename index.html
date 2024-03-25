@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="icon" href="gambar/logo.jpg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Management</title>
+</head>
+
+
+<div class="container">
+    <label class="ms-4"><h1>Data Mahasiswa | Halo, <span id="usernamePlaceholder"></span>!</h1></label>
+
+    <div id="clock" class="position-fixed top-0 end-0 m-3 bg-dark text-light px-2 py-1 rounded"></div>
+    
+
+    <!-- Form untuk menambah data -->
+    <form id="addForm">
+        <h3>Tambah Data</h3>
+        <input type="text" id="nim" placeholder="NIM">
+        <input type="text" id="name" placeholder="Nama">      
+        <input type="text" id="alamat" placeholder="Alamat">
+        <input type="submit" value="Tambah">
+    </form>
+
+    <!-- Tabel untuk menampilkan data -->
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>NIM</th>
+                <th>Nama</th>
+                <th>Alamat</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data akan ditampilkan di sini -->
+        </tbody>
+            <!-- Tombol navigasi -->
+            
+        
+            <!-- Form untuk menambah data -->
+            <!-- Sisipkan formulir di sini -->
+        
+            <!-- Tabel untuk menampilkan data -->
+            <table id="dataTable">
+                <!-- Tambahkan struktur tabel di sini -->
+            </table>
+            
+            <div class="page-navigation">
+                <div class="page-info" id="pageInfo"></div>
+                <div class="page-buttons">
+                    <button id="prevPage" onclick="prevPage()">Halaman Sebelumnya</button>
+                    <button id="nextPage" onclick="nextPage()">Halaman Berikutnya</button>
+                </div>
+            </div>
+            <!-- Modal box untuk mengubah data -->
+            <!-- Sisipkan modal di sini -->
+
+        
+    </table>
+
+    <!-- Modal box untuk mengubah data -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Edit Data</h2>
+            <input type="text" id="editName" placeholder="Nama">
+            <input type="text" id="editAlamat" placeholder="Alamat">
+            <input type="submit" id="updateBtn" value="Simpan">
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
